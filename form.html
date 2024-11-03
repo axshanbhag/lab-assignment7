@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Form</title>
+  <style>
+    body {
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .form {
+      background-color: white;
+      border-radius: 8px;
+      padding: 25px;
+      width: 325px;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: black;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 12px;
+      color: #414141;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .name, .email, .password, .age {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border: 1px solid white;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .genderoptions, .subscribe {
+      display: flex;
+      gap: 15px;
+      margin: 10px;
+    }
+
+    input[type=submit] {
+      background-color: #a98e8e;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form">
+  <h2>Web Form</h2>
+  <form>
+    <div class="name">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    
+    <div class="password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+    
+    <label>Gender:</label>
+    <div class="genderoptions">
+      <label><input type="radio" name="gender" value="male"> Male </label>
+      <label><input type="radio" name="gender" value="female"> Female </label>
+      <label><input type="radio" name="gender" value="other"> Other </label>
+    </div>
+
+    <div class="age">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100">
+    </div>
+
+    <div class="subscribe">
+      <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
